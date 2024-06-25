@@ -13,7 +13,9 @@ use Filament\FileUploads\FileUpload;
 class ListPauts extends ListRecords
 {
     protected static string $resource = PautResource::class;
-
+    
+    protected static ?string $title = 'Data Paud';
+    
     protected function getHeaderActions(): array
     {
         return [
